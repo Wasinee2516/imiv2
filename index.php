@@ -91,7 +91,7 @@
      
       $(()=>{
           
-          let url="https://api.thingspeak.com/channels/1458415/fields/1.json?results=30";
+          let url="https://api.thingspeak.com/channels/1458415/fields/1.json?results=50";
           $.getJSON(url)
             .done(function(data){
               //console.log(data);
