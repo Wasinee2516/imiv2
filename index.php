@@ -86,9 +86,20 @@
           }
       });
     }
+    function showLine(data2){
+      var ctxy=document.getElementById('myChart2').getContext('2d');
+      var myChart=new Chart(ctxy,{
+          type:'line',
+          data:{
+            labels:data2.xlabel,
+            datasets:[{
+                label:data2.label,
+                data:data2.data
+            }]
+          }
+      });
+    }
       
-      
-     
       $(()=>{
           
           let url="https://api.thingspeak.com/channels/1458415/fields/1.json?results=50";
